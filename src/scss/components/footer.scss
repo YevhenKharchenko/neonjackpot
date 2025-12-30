@@ -1,5 +1,5 @@
 .footer {
-  background: #210f0f;
+  background: #022d41;
   padding: 48px 0;
 
   @include media(desktop) {
@@ -10,10 +10,19 @@
 .footer-container {
 }
 
+.footer-nav-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .footer-nav {
   margin-bottom: 40px;
 
   @include media(desktop) {
+    margin-bottom: 0;
   }
 }
 
@@ -21,10 +30,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
 
   @include media(desktop) {
-    gap: 48px;
+    gap: 8px;
   }
 }
 
@@ -37,7 +46,7 @@
   font-size: 14px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #fff3e9;
+  color: #ecf6ff;
 
   @include media(desktop) {
     font-size: 16px;
@@ -48,7 +57,7 @@
   font-family: 'Asap', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff3e9;
+  color: #ecf6ff;
   text-align: center;
 
   @include media(desktop) {

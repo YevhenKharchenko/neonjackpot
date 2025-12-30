@@ -1,30 +1,30 @@
 .hero-section {
-  background: #210f0f;
+  background: linear-gradient(301deg, #f13321 0%, #f1837b 100%);
 
   @include media(desktop) {
   }
 }
 
 .hero-bg-wrapper {
-  padding-top: 88px;
-  padding-bottom: 64px;
+  padding-top: 56px;
+  padding-bottom: 56px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/hero/hero-man-mob.png),
-    url(../img/hero/hero-bg-mob.jpg);
+  background-image: url(../img/hero/hero-title-mob.png),
+    url(../img/hero/hero-img-mob.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom 128px center, bottom center;
-  background-size: auto, cover;
+  background-position: top 124px center, bottom 120px center;
+  background-size: auto, auto;
 
   @include media(desktop) {
-    padding-top: 100px;
-    padding-bottom: 114px;
+    padding-top: 136px;
+    padding-bottom: 112px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
+    background-image: url(../img/hero/hero-bg-desk.png);
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: auto;
+    background-size: cover;
   }
 }
 
@@ -41,79 +41,62 @@
   }
 }
 
-.hero-main-title {
-  font-family: 'Londrina Solid', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff3e9;
-  max-width: 303px;
+.hero-text-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 
   @include media(desktop) {
-    font-size: 22px;
-    line-height: 1.45455;
-    letter-spacing: 0.03em;
-    max-width: 434px;
-    margin-bottom: 96px;
+    display: none;
   }
 }
 
 .hero-text {
   font-family: 'Londrina Solid', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.3125;
-  text-transform: uppercase;
+  font-size: 24px;
   text-align: center;
-  color: #fff3e9;
-  max-width: 242px;
+  color: #ecf6ff;
+  max-width: 273px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 435px;
+  margin-bottom: 288px;
 
   @include media(desktop) {
-    font-size: 24px;
-    letter-spacing: 0.01em;
-    max-width: 397px;
-    margin-bottom: 378px;
+    font-size: 40px;
+    max-width: 434px;
+    margin-bottom: 288px;
   }
 }
 
 .hero-btn {
-  box-shadow: 2px 4px 4px rgba(255, 243, 233, 0.3);
-  background: #fff3e9;
-  border: 1px solid rgba(33, 15, 15, 0.6);
+  box-shadow: 0 2px 4px rgba(2, 45, 65, 0.6),
+    inset 0 0 14px 4px rgba(53, 115, 171, 0.4);
+  background: #ecf6ff;
+  border: 2px solid #3573ab;
   border-radius: 8px;
-  padding: 10px;
+  padding: 16px;
   width: 100%;
-  max-width: 180px;
+  max-width: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Asap', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3;
-  text-align: center;
-  color: #210f0f;
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #022d41;
   margin-left: auto;
   margin-right: auto;
-  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    border-color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
 
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 0 4px 4px rgba(255, 243, 233, 0.4),
-      inset 0 0 34px 4px rgba(246, 180, 32, 0.5);
-    background: #fff3e9;
-    border-color: rgba(246, 180, 32, 0.6);
+    background: #022d41;
+    border-color: #022d41;
+    color: #ecf6ff;
   }
 
   @include media(desktop) {
