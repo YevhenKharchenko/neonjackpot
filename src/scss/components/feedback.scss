@@ -1,0 +1,144 @@
+.feedback-section {
+}
+
+.feedback-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+.feedback-container {
+}
+
+.feedback-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.feedback-title {
+  @include media(desktop) {
+  }
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1062px;
+  }
+}
+
+.feedback-list-item {
+  border: 2px solid rgba(2, 45, 65, 0.4);
+  border-radius: 16px;
+  padding: 11px 22px;
+  width: 100%;
+  max-width: 323px;
+  min-height: 100px;
+
+  &:nth-child(1) {
+    background: #3573ab;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &:nth-child(2) {
+    background: #e17b2e;
+  }
+
+  &:nth-child(3) {
+    background: #7f1aa6;
+  }
+
+  &:nth-child(4) {
+    background: #128e33;
+  }
+
+  &:nth-child(5) {
+    background: #b538a4;
+  }
+
+  &:nth-child(6) {
+    background: #077a8c;
+  }
+
+  @include media(desktop) {
+    padding: 22px;
+    max-width: 303px;
+    min-height: 130px;
+  }
+}
+
+.feedback-rating-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.feedback-item-rating-text {
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ecf6ff;
+
+  @include media(desktop) {
+  }
+}
+
+.feedback-item-rating-bottom-text {
+  margin-top: 8px;
+
+  @include media(desktop) {
+    margin-top: 16px;
+  }
+}
+
+.feedback-star-img {
+  @include media(desktop) {
+  }
+}
+
+.feedback-item-text {
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ecf6ff;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.feedback-item-name {
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: right;
+  color: #ecf6ff;
+
+  @include media(desktop) {
+  }
+}

@@ -1,7 +1,7 @@
-.advantages-section {
+.platform-section {
 }
 
-.advantages-bg-wrapper {
+.platform-bg-wrapper {
   padding-top: 48px;
   padding-bottom: 48px;
 
@@ -11,26 +11,25 @@
   }
 }
 
-.advantages-container {
+.platform-container {
 }
 
-.advantages-title-wrapper {
+.platform-title-wrapper {
   @include media(desktop) {
   }
 }
 
-.advantages-title {
+.platform-title {
   @include media(desktop) {
   }
 }
 
-.advantages-subtitle {
+.platform-subtitle {
   @include media(desktop) {
-    margin-bottom: 48px;
   }
 }
 
-.advantages-content-wrapper {
+.platform-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,31 +38,29 @@
   @include media(desktop) {
     flex-direction: row;
     justify-content: center;
-    gap: 16px;
+    gap: 45px;
   }
 }
 
-.advantages-img {
+.platform-img {
   @include media(desktop) {
   }
 }
 
-.advantages-list {
+.platform-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-bottom: 16px;
 
   @include media(desktop) {
     gap: 24px;
-    margin-bottom: 50px;
   }
 }
 
-.advantages-list-item {
+.platform-list-item {
   width: 100%;
-  max-width: 303px;
+  max-width: 271px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,36 +68,35 @@
   gap: 16px;
 
   &:nth-child(1) {
-    .advantages-item-circle {
+    .platform-item-circle {
       background: #fc3728;
     }
   }
 
   &:nth-child(2) {
-    .advantages-item-circle {
+    .platform-item-circle {
       background: #05d43b;
     }
   }
 
   &:nth-child(3) {
-    .advantages-item-circle {
+    .platform-item-circle {
       background: #7f1aa6;
     }
   }
 
   &:nth-child(4) {
-    .advantages-item-circle {
+    .platform-item-circle {
       background: #ff913e;
     }
   }
 
   @include media(desktop) {
     gap: 24px;
-    max-width: 410px;
   }
 }
 
-.advantages-item-text {
+.platform-item-text {
   font-family: 'Asap', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -112,21 +108,8 @@
   }
 }
 
-.advantages-item-circle {
+.platform-item-circle {
   border-radius: 100px;
   width: 24px;
   height: 24px;
-}
-
-.advantages-text {
-  font-family: 'Londrina Solid', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.33333;
-  text-align: center;
-  color: #022d41;
-
-  @include media(desktop) {
-    max-width: 410px;
-  }
 }

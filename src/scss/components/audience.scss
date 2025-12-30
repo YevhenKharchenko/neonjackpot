@@ -1,0 +1,96 @@
+.audience-section {
+  background: #3573ab;
+}
+
+.audience-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+.audience-container {
+}
+
+.audience-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.audience-title {
+  @include media(desktop) {
+  }
+}
+
+.audience-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.audience-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 55px;
+  }
+}
+
+.audience-img {
+  @include media(desktop) {
+  }
+}
+
+.audience-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    gap: 40px;
+  }
+}
+
+.audience-top-text {
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  color: #ecf6ff;
+
+  @include media(desktop) {
+  }
+}
+
+.audience-middle-text {
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  color: #ecf6ff;
+
+  @include media(desktop) {
+  }
+}
+
+.audience-bottom-text {
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  color: #ecf6ff;
+
+  @include media(desktop) {
+  }
+}

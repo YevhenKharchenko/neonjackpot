@@ -13,7 +13,7 @@ gallerySwiper = new Swiper('.gallery-swiper-container', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   initialSlide: 0,
-  spaceBetween: 16,
+  spaceBetween: 8,
   speed: 500,
   allowTouchMove: true,
   grabCursor: true,
@@ -21,7 +21,7 @@ gallerySwiper = new Swiper('.gallery-swiper-container', {
     1440: {
       slidesPerView: 'auto',
       initialSlide: 2,
-      spaceBetween: 32,
+      spaceBetween: 40,
     },
   },
 

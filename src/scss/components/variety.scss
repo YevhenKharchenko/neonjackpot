@@ -1,94 +1,98 @@
-.mechanic-section {
+.variety-section {
   background: #3573ab;
 }
 
-.mechanic-bg-wrapper {
-  padding-top: 40px;
+.variety-bg-wrapper {
+  padding-top: 48px;
   padding-bottom: 48px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
     padding-top: 56px;
     padding-bottom: 56px;
+    max-width: 1440px;
   }
 }
 
-.mechanic-container {
+.variety-container {
 }
 
-.mechanic-title-wrapper {
+.variety-title-wrapper {
   @include media(desktop) {
   }
 }
 
-.mechanic-title {
+.variety-title {
   @include media(desktop) {
   }
 }
 
-.mechanic-subtitle {
+.variety-subtitle {
   color: #ecf6ff;
 
   @include media(desktop) {
-    margin-bottom: 56px;
   }
 }
 
-.mechanic-content-wrapper {
+.variety-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
+  margin-bottom: 40px;
 
   @include media(desktop) {
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
+    align-items: start;
+    gap: 47px;
+    margin-bottom: 48px;
   }
 }
 
-.mechanic-list {
+.variety-list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 
   @include media(desktop) {
-    gap: 24px;
+    width: 100%;
+    max-width: max-content;
   }
 }
 
-.mechanic-list-item {
-  box-shadow: inset 0 0 24px #3573ab;
-  background: #ecf6ff;
-  border: 2px solid #fc3728;
-  border-radius: 8px;
-  padding: 10px 46px;
-  max-width: 320px;
-  min-height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.variety-img {
   @include media(desktop) {
-    padding: 10px 22px;
-    max-width: 220px;
-    min-height: 130px;
   }
 }
 
-.mechanic-item-text {
+.variety-item-text {
   font-family: 'Asap', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
   text-align: center;
-  color: #022d41;
+  color: #ecf6ff;
 
   @include media(desktop) {
   }
 }
 
-.mechanic-img {
+.variety-bottom-text {
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  color: #ecf6ff;
+  max-width: 263px;
+  margin-left: auto;
+  margin-right: auto;
+
   @include media(desktop) {
+    max-width: max-content;
   }
 }
