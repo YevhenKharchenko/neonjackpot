@@ -1,0 +1,148 @@
+.atmosphere-section {
+}
+
+.atmosphere-bg-wrapper {
+  background: linear-gradient(180deg, #80232d 0%, #210f0f 100%);
+  padding-top: 40px;
+  padding-bottom: 0px;
+
+  @include media(desktop) {
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+}
+
+.atmosphere-container {
+}
+
+.atmosphere-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.atmosphere-title {
+  @include media(desktop) {
+  }
+}
+
+.atmosphere-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 76px;
+  }
+}
+
+.atmosphere-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    max-width: max-content;
+    margin: 0;
+  }
+}
+
+.atmosphere-list-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.atmosphere-icon {
+  min-width: 25px;
+
+  @include media(desktop) {
+  }
+}
+
+.atmosphere-item-text {
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff3e9;
+
+  @include media(desktop) {
+  }
+}
+
+.atmosphere-img-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    min-width: 519px;
+  }
+}
+
+.atmosphere-text-wrapper {
+  padding: 24px 24px 24px 16px;
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  width: 100%;
+  max-width: 195px;
+  min-height: 168px;
+  background-image: url(../img/atmosphere/atmosphere-figure-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+
+  @include media(desktop) {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 318px;
+    min-height: 144px;
+    background-image: url(../img/atmosphere/atmosphere-figure-desk.png);
+  }
+}
+
+.atmosphere-quote-icon {
+  min-width: 33px;
+
+  @include media(desktop) {
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.atmosphere-img-text {
+  font-family: 'Asap', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #210f0f;
+  max-width: 110px;
+
+  @include media(desktop) {
+    font-size: 14px;
+    line-height: 1.71429;
+    max-width: 178px;
+  }
+}
+
+.atmosphere-img {
+  margin-top: -50px;
+
+  @include media(desktop) {
+    margin-top: -150px;
+  }
+}

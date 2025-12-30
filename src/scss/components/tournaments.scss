@@ -1,0 +1,100 @@
+.tournaments-section {
+}
+
+.tournaments-bg-wrapper {
+  background: linear-gradient(180deg, #80232d 0%, #210f0f 100%);
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 56px;
+    padding-bottom: 46px;
+  }
+}
+
+.tournaments-container {
+}
+
+.tournaments-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.tournaments-title {
+  @include media(desktop) {
+  }
+}
+
+.tournaments-subtitle {
+  color: #fff3e9;
+
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.tournaments-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+}
+
+.tournaments-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.tournaments-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 460px;
+  }
+}
+
+.tournaments-list-item {
+  width: 100%;
+  max-width: 343px;
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/tournaments/tournaments-figure-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include media(desktop) {
+    max-width: 460px;
+    background-image: url(../img/tournaments/tournaments-figure-desk.png);
+  }
+}
+
+.tournaments-item-text {
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  text-align: center;
+  color: #210f0f;
+  max-width: 279px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    line-height: 1.71429;
+    max-width: max-content;
+  }
+}

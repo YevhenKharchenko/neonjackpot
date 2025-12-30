@@ -1,0 +1,160 @@
+.about-section {
+}
+
+.about-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 64px;
+    padding-bottom: 56px;
+    max-width: 1440px;
+  }
+}
+
+.about-container {
+}
+
+.about-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.about-title {
+  @include media(desktop) {
+  }
+}
+
+.about-subtitle {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.about-img {
+  @include media(desktop) {
+  }
+}
+
+.about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 458px;
+    margin-left: 47px;
+    margin-right: 109px;
+  }
+}
+
+.about-text {
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #210f0f;
+
+  @include media(desktop) {
+  }
+}
+
+.about-loop-img {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.about-top-text {
+  margin-top: 24px;
+
+  @include media(desktop) {
+    margin-top: 0;
+  }
+}
+
+.about-middle-text {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    margin-top: 48px;
+  }
+}
+
+.about-loop-text {
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-top: 48px;
+    margin-bottom: 16px;
+  }
+}
+
+.about-loop-wrapper {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+.about-loop-text-desk {
+  @include media(desktop) {
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #210f0f;
+  }
+}
+
+.close-icon {
+  @include media(desktop) {
+  }
+}
+
+.about-bottom-text-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    font-family: 'Asap', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #210f0f;
+    margin-top: 48px;
+  }
+}
+
+.about-bottom-text {
+  margin-top: 32px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
