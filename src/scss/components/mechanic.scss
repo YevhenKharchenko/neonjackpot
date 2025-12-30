@@ -1,93 +1,94 @@
-.strategy-section {
+.mechanic-section {
 }
 
-.strategy-bg-wrapper {
+.mechanic-bg-wrapper {
+  background: #3573ab;
   padding-top: 40px;
   padding-bottom: 48px;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
 
   @include media(desktop) {
     padding-top: 56px;
     padding-bottom: 56px;
-    max-width: 1440px;
   }
 }
 
-.strategy-container {
+.mechanic-container {
 }
 
-.strategy-title-wrapper {
+.mechanic-title-wrapper {
   @include media(desktop) {
   }
 }
 
-.strategy-title {
+.mechanic-title {
   @include media(desktop) {
   }
 }
 
-.strategy-subtitle {
+.mechanic-subtitle {
+  color: #ecf6ff;
+
   @include media(desktop) {
+    margin-bottom: 56px;
   }
 }
 
-.strategy-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  padding: 10px;
-  margin-bottom: 32px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    gap: 24px;
-    margin-bottom: 40px;
-  }
-}
-
-.strategy-list-item {
+.mechanic-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 
   @include media(desktop) {
-    width: 100%;
-    max-width: 375px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
   }
 }
 
-.strategy-img {
+.mechanic-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
   @include media(desktop) {
+    gap: 24px;
   }
 }
 
-.strategy-item-text {
+.mechanic-list-item {
+  box-shadow: inset 0 0 24px #3573ab;
+  background: #ecf6ff;
+  border: 2px solid #fc3728;
+  border-radius: 8px;
+  padding: 10px 46px;
+  max-width: 320px;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 10px 22px;
+    max-width: 220px;
+    min-height: 130px;
+  }
+}
+
+.mechanic-item-text {
   font-family: 'Asap', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: center;
-  color: #210f0f;
+  color: #022d41;
 
   @include media(desktop) {
   }
 }
 
-.strategy-bottom-text {
-  font-family: 'Londrina Solid', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.33333;
-  text-align: center;
-  color: #210f0f;
-
+.mechanic-img {
   @include media(desktop) {
-    line-height: 1;
   }
 }
