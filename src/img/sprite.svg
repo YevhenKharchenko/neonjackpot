@@ -18,11 +18,8 @@
       <path fill="none" stroke="#3573ab" stroke-width="1.333" d="M5.333.667h21.333a4.667 4.667 0 0 1 4.667 4.667v21.333a4.667 4.667 0 0 1-4.667 4.667H5.333a4.667 4.667 0 0 1-4.667-4.667V5.334A4.667 4.667 0 0 1 5.333.667z" style="stroke:var(--color4, #3573ab)"/>
       <path fill="none" stroke="#ecf6ff" stroke-linecap="round" stroke-width="1.333" d="M7.5 9.5h17m-17 12h17m-17-6h17" style="stroke:var(--color3, #ecf6ff)"/>
     </symbol>
-    <symbol id="icon-microsoft-logo" viewBox="0 0 32 32">
-      <path fill="#f25022" d="M15.211 0H0v15.22h15.211V0z" style="fill:var(--color5, #f25022)"/>
-      <path fill="#7fba00" d="M32 0H16.789v15.22H32V0z" style="fill:var(--color6, #7fba00)"/>
-      <path fill="#00a4ef" d="M15.211 16.78H0V32h15.211V16.78z" style="fill:var(--color7, #00a4ef)"/>
-      <path fill="#ffb900" d="M32 16.78H16.789V32H32V16.78z" style="fill:var(--color8, #ffb900)"/>
+    <symbol id="icon-arrow-back" viewBox="0 0 24 24" fill="none">
+      <path d="M16 19.5L8 12L16 4.5" stroke="#ECF6FF" stroke-linecap="round" stroke-linejoin="round" />
     </symbol>
   </defs>
 </svg>

@@ -6,7 +6,7 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 56px;
+  padding-top: 70px;
   padding-bottom: 56px;
   max-width: 375px;
   margin-left: auto;
@@ -14,7 +14,7 @@
   background-image: url(../img/hero/hero-title-mob.png),
     url(../img/hero/hero-img-mob.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: top 124px center, bottom 120px center;
+  background-position: top 134px center, bottom 120px center;
   background-size: auto, auto;
 
   @include media(desktop) {
