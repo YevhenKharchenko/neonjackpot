@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Drop Away: Color Puzzle – Smart Spatial Logic Game</title>
+    <meta
+      name="description"
+      content="Drop Away: Color Puzzle is a strategic drag-and-drop puzzle game where color, space, and planning decide every move. Clean design, clever levels, and pure logic."
+    />
+    <link rel="canonical" href="https://neonjackpot.space" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="NeonJackpot Studio" />
+
+    <meta property="og:title" content="Drop Away: Color Puzzle" />
+    <meta
+      property="og:description"
+      content="Drag, drop, and think ahead in a clean spatial color puzzle that rewards smart planning."
+    />
+    <meta
+      property="og:image"
+      content="https://neonjackpot.space/assets/og-dropaway.jpg"
+    />
+    <meta property="og:url" content="https://neonjackpot.space" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Drop Away: Color Puzzle" />
+    <meta
+      name="twitter:description"
+      content="A clever drag-and-drop puzzle where every move matters."
+    />
+    <meta
+      name="twitter:image"
+      content="https://neonjackpot.space/assets/og-dropaway.jpg"
+    />
+    <link rel="icon" type="image/png" href="/neonjackpot/favicon.png" />
+    
+    <script type="module" crossorigin src="/neonjackpot/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/neonjackpot/assets/vendor-26f8a4ee.js">
+    <link rel="stylesheet" href="/neonjackpot/assets/vendor-99dc0a1c.css">
+    <link rel="stylesheet" href="/neonjackpot/assets/styles-13ed1767.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Welcome</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">Core Game Idea</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#mechanic"
+            >The Drop Mechanic</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#advantages"
+            >Why It’s Addictive</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#variety"
+            >Level Variety & Longevity</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#platform"
+            >Platform & Accessibility</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery">Game Gallery</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#feedback"
+            >Player Feedback</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#audience"
+            >Who Is This Game For</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#play">Play Now</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="24" height="24">
+          <use href="/neonjackpot/assets/sprite-84c468a6.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="24" height="24">
+          <use href="/neonjackpot/assets/sprite-84c468a6.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <picture>
+          <source
+            srcset="./img/hero/hero-text-desk.png"
+            media="(min-width: 1440px)"
+            width="418"
+            height="386" />
+          <source
+            srcset="/neonjackpot/assets/hero-text-mob-8712f48d.png "
+            width="303"
+            height="303" />
+          <img
+            class="hero-text-img"
+            src="/neonjackpot/assets/hero-text-mob-8712f48d.png"
+            alt="Screenshot of the game"
+            width="303"
+            height="303"
+            loading="lazy"
+        /></picture>
+        <p class="hero-text">
+          Figure out these color puzzles where one wrong move screws everything
+          up.
+        </p>
+        <a
+          class="hero-btn"
+          href="https://play.google.com/store/apps/details?id=com.brewgames.dropaway&hl=en&gl=us"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Play Drop Away
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="section-title-wrapper about-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title about-title">CORE GAME IDEA</h2>
+    </div>
+  </div>
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <p class="section-subtitle about-subtitle">
+        Drop Away is basically about fitting colored blocks in tight spaces
+        without messing up.
+      </p>
+      <ul class="about-list">
+        <li class="about-list-item">
+          <picture>
+            <source
+              srcset="/neonjackpot/assets/about-img1-desk-fbd92c1d.png "
+              media="(min-width: 1440px)"
+              width="319"
+              height="390" />
+            <source
+              srcset="/neonjackpot/assets/about-img1-mob-c62dee07.png "
+              width="245"
+              height="300" />
+            <img
+              class="about-img"
+              src="/neonjackpot/assets/about-img1-mob-c62dee07.png"
+              alt="Screenshot of the game"
+              width="245"
+              height="300"
+              loading="lazy"
+          /></picture>
+          <p class="about-item-text">
+            You drag furniture-shaped blocks into a limited area. Each block has
+            a color. Each stick figure is waiting for the correct color.
+          </p>
+        </li>
+        <li class="about-list-item">
+          <picture>
+            <source
+              srcset="/neonjackpot/assets/about-img2-desk-f86c6b0a.png "
+              media="(min-width: 1440px)"
+              width="319"
+              height="390" />
+            <source
+              srcset="/neonjackpot/assets/about-img2-mob-d81c7174.png "
+              width="245"
+              height="300" />
+            <img
+              class="about-img"
+              src="/neonjackpot/assets/about-img2-mob-d81c7174.png"
+              alt="Screenshot of the game"
+              width="245"
+              height="300"
+              loading="lazy"
+          /></picture>
+          <p class="about-item-text">
+            If you block the wrong path — you’re stuck. If you think ahead —
+            everything flows.
+          </p>
+        </li>
+        <li class="about-list-item">
+          <picture>
+            <source
+              srcset="/neonjackpot/assets/about-img3-desk-93346068.png "
+              media="(min-width: 1440px)"
+              width="319"
+              height="390" />
+            <source
+              srcset="/neonjackpot/assets/about-img3-mob-c2a765fe.png "
+              width="245"
+              height="300" />
+            <img
+              class="about-img"
+              src="/neonjackpot/assets/about-img3-mob-c2a765fe.png"
+              alt="Screenshot of the game"
+              width="245"
+              height="300"
+              loading="lazy"
+          /></picture>
+          <p class="about-item-text">
+            There are no timers.<br />
+            No reflex challenges.<br />
+            It's all about figuring stuff out.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section mechanic-section" id="mechanic">
+  <div class="section-title-wrapper mechanic-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title mechanic-title">THE DROP MECHANIC</h2>
+    </div>
+  </div>
+  <div class="mechanic-bg-wrapper">
+    <div class="container mechanic-container">
+      <p class="section-subtitle mechanic-subtitle">
+        Look, what really matters in this game is:
+      </p>
+      <div class="mechanic-content-wrapper">
+        <ul class="mechanic-list">
+          <li class="mechanic-list-item">
+            <p class="mechanic-item-text">
+              What you drop first decides everything else
+            </p>
+          </li>
+          <li class="mechanic-list-item">
+            <p class="mechanic-item-text">
+              You don't have much room to work with, and it'll punish you for
+              mistakes
+            </p>
+          </li>
+          <li class="mechanic-list-item">
+            <p class="mechanic-item-text">
+              One wrong drop can lock the entire board
+            </p>
+          </li>
+        </ul>
+        <picture>
+          <source
+            srcset="/neonjackpot/assets/mechanic-img-desk-ecf6bd6d.png "
+            media="(min-width: 1440px)"
+            width="240"
+            height="294" />
+          <source
+            srcset="/neonjackpot/assets/mechanic-img-mob-f7b59f62.png "
+            width="174"
+            height="214" />
+          <img
+            class="mechanic-img"
+            src="/neonjackpot/assets/mechanic-img-mob-f7b59f62.png"
+            alt="Screenshot of the game"
+            width="174"
+            height="214"
+            loading="lazy"
+        /></picture>
+        <ul class="mechanic-list">
+          <li class="mechanic-list-item">
+            <p class="mechanic-item-text">
+              Blocks interact with each other by position
+            </p>
+          </li>
+          <li class="mechanic-list-item">
+            <p class="mechanic-item-text">
+              Colors must reach the right stick figures
+            </p>
+          </li>
+          <li class="mechanic-list-item">
+            <p class="mechanic-item-text">
+              The challenge isn’t speed — it’s foresight
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section advantages-section" id="advantages">
+  <div class="section-title-wrapper advantages-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title advantages-title">WHY IT’S ADDICTIVE</h2>
+    </div>
+  </div>
+  <div class="advantages-bg-wrapper">
+    <div class="container advantages-container">
+      <p class="section-subtitle advantages-subtitle">
+        Players keep coming back to Drop Away because:
+      </p>
+      <div class="advantages-content-wrapper">
+        <img
+          class="advantages-img"
+          src="/neonjackpot/assets/advantages-img1-ae0da287.png"
+          alt="Screenshot of the game"
+          width="322"
+          height="539"
+          loading="lazy"
+        />
+        <div class="advantages-text-wrapper">
+          <ul class="advantages-list">
+            <li class="advantages-list-item">
+              <p class="advantages-item-text">
+                You always feel like there's gotta be a way to beat it
+              </p>
+              <div class="advantages-item-circle"></div>
+            </li>
+            <li class="advantages-list-item">
+              <p class="advantages-item-text">
+                When you mess up, you can usually see what went wrong
+              </p>
+              <div class="advantages-item-circle"></div>
+            </li>
+            <li class="advantages-list-item">
+              <p class="advantages-item-text">
+                When you finally solve it, you actually feel like you worked for
+                it
+              </p>
+              <div class="advantages-item-circle"></div>
+            </li>
+            <li class="advantages-list-item">
+              <p class="advantages-item-text">
+                The board “clicks” when solved correctly
+              </p>
+              <div class="advantages-item-circle"></div>
+            </li>
+          </ul>
+          <p class="advantages-text">
+            It’s the kind of game where you restart immediately — not because
+            you lost, but because you almost had it.
+          </p>
+        </div>
+        <img
+          class="advantages-img"
+          src="/neonjackpot/assets/advantages-img2-10715f13.png"
+          alt="Screenshot of the game"
+          width="322"
+          height="539"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section variety-section" id="variety">
+  <div class="section-title-wrapper variety-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title variety-title">LEVEL VARIETY & LONGEVITY</h2>
+    </div>
+  </div>
+  <div class="variety-bg-wrapper">
+    <div class="container variety-container">
+      <p class="section-subtitle variety-subtitle">
+        We've designed hundreds of unique levels:
+      </p>
+      <ul class="variety-list">
+        <li class="variety-list-item">
+          <picture>
+            <source
+              srcset="/neonjackpot/assets/variety-img1-desk-b0d30578.png "
+              media="(min-width: 1440px)"
+              width="320"
+              height="420" />
+            <source
+              srcset="/neonjackpot/assets/variety-img1-mob-a9e4f22c.png "
+              width="229"
+              height="300" />
+            <img
+              class="variety-img"
+              src="/neonjackpot/assets/variety-img1-mob-a9e4f22c.png"
+              alt="Screenshot of the game"
+              width="229"
+              height="300"
+              loading="lazy"
+          /></picture>
+          <p class="variety-item-text">
+            New layouts introduce fresh thinking patterns
+          </p>
+        </li>
+        <li class="variety-list-item">
+          <picture>
+            <source
+              srcset="/neonjackpot/assets/variety-img2-desk-f6c67781.png "
+              media="(min-width: 1440px)"
+              width="320"
+              height="420" />
+            <source
+              srcset="/neonjackpot/assets/variety-img2-mob-1d8fa2a8.png "
+              width="229"
+              height="300" />
+            <img
+              class="variety-img"
+              src="/neonjackpot/assets/variety-img2-mob-1d8fa2a8.png"
+              alt="Screenshot of the game"
+              width="229"
+              height="300"
+              loading="lazy"
+          /></picture>
+          <p class="variety-item-text">
+            Each level gets trickier but stays fresh
+          </p>
+        </li>
+        <li class="variety-list-item">
+          <picture>
+            <source
+              srcset="/neonjackpot/assets/variety-img3-desk-2f62d73f.png "
+              media="(min-width: 1440px)"
+              width="320"
+              height="420" />
+            <source
+              srcset="/neonjackpot/assets/variety-img3-mob-ae97e294.png "
+              width="229"
+              height="300" />
+            <img
+              class="variety-img"
+              src="/neonjackpot/assets/variety-img3-mob-ae97e294.png"
+              alt="Screenshot of the game"
+              width="229"
+              height="300"
+              loading="lazy"
+          /></picture>
+          <p class="variety-item-text">
+            Puzzle types mix block logic and color routing
+          </p>
+        </li>
+      </ul>
+      <p class="variety-bottom-text">
+        No filler levels. Each level has its own twist that'll make you think
+        differently.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="section platform-section" id="platform">
+  <div class="section-title-wrapper platform-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title platform-title">PLATFORM & ACCESSIBILITY</h2>
+    </div>
+  </div>
+  <div class="platform-bg-wrapper">
+    <div class="container platform-container">
+      <div class="platform-content-wrapper">
+        <picture>
+          <source
+            srcset="/neonjackpot/assets/platform-img1-desk-3efa4591.png "
+            media="(min-width: 1440px)"
+            width="345"
+            height="398" />
+          <source
+            srcset="/neonjackpot/assets/platform-img1-mob-cb075a31.png "
+            width="211"
+            height="243" />
+          <img
+            class="platform-img"
+            src="/neonjackpot/assets/platform-img1-mob-cb075a31.png"
+            alt="Screenshot of the game"
+            width="211"
+            height="243"
+            loading="lazy"
+        /></picture>
+        <div class="platform-text-wrapper">
+          <ul class="platform-list">
+            <li class="platform-list-item">
+              <p class="platform-item-text">Available on Android and Windows</p>
+              <div class="platform-item-circle"></div>
+            </li>
+            <li class="platform-list-item">
+              <p class="platform-item-text">Intuitive drag-and-drop controls</p>
+              <div class="platform-item-circle"></div>
+            </li>
+            <li class="platform-list-item">
+              <p class="platform-item-text">
+                Designed for mouse and touch input
+              </p>
+              <div class="platform-item-circle"></div>
+            </li>
+            <li class="platform-list-item">
+              <p class="platform-item-text">
+                Suitable for short sessions or long play
+              </p>
+              <div class="platform-item-circle"></div>
+            </li>
+            <li class="platform-list-item">
+              <p class="platform-item-text">
+                The game respects the player’s time
+              </p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="/neonjackpot/assets/platform-img2-desk-9cf9dc15.png "
+            media="(min-width: 1440px)"
+            width="357"
+            height="398" />
+          <source
+            srcset="/neonjackpot/assets/platform-img2-mob-c215532b.png "
+            width="210"
+            height="234" />
+          <img
+            class="platform-img"
+            src="/neonjackpot/assets/platform-img2-mob-c215532b.png"
+            alt="Screenshot of the game"
+            width="210"
+            height="234"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gallery-section section" id="gallery">
+  <div class="section-title-wrapper benefits-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title gallery-title">GAME GALLERY</h2>
+    </div>
+  </div>
+  <div class="gallery-bg-wrapper">
+    <div class="container gallery-container">
+      <div class="gallery-swiper-container">
+        <ul class="swiper-wrapper gallery-swiper-wrapper">
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-img"
+              src="/neonjackpot/assets/gallery-img1-ebc1d012.png"
+              alt="Screenshot of the game"
+              width="303"
+              height="539"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-img"
+              src="/neonjackpot/assets/gallery-img2-bf455f72.png"
+              alt="Screenshot of the game"
+              width="303"
+              height="539"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-img"
+              src="/neonjackpot/assets/gallery-img3-122ecd90.png"
+              alt="Screenshot of the game"
+              width="303"
+              height="539"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-img"
+              src="/neonjackpot/assets/gallery-img4-89e9d1d1.png"
+              alt="Screenshot of the game"
+              width="303"
+              height="539"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-img"
+              src="/neonjackpot/assets/gallery-img5-000a1427.png"
+              alt="Screenshot of the game"
+              width="303"
+              height="539"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-img"
+              src="/neonjackpot/assets/gallery-img6-94d4b2e9.png"
+              alt="Screenshot of the game"
+              width="303"
+              height="539"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="controls gallery-controls">
+        <button
+          class="arrow-btn"
+          id="galleryLeftArrow"
+          aria-label="Previous slide"
+        >
+          <svg class="arrow-icon" width="80" height="80">
+            <use href="/neonjackpot/assets/sprite-84c468a6.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+
+        <button
+          class="arrow-btn"
+          id="galleryRightArrow"
+          aria-label="Next slide"
+        >
+          <svg class="arrow-icon" width="80" height="80">
+            <use href="/neonjackpot/assets/sprite-84c468a6.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section feedback-section" id="feedback">
+  <div class="section-title-wrapper feedback-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title feedback-title">PLAYER FEEDBACK</h2>
+    </div>
+  </div>
+  <div class="feedback-bg-wrapper">
+    <div class="container feedback-container">
+      <ul class="feedback-list">
+        <li class="feedback-list-item">
+          <div class="feedback-rating-wrapper">
+            <p class="feedback-item-rating-text">Rating:</p>
+            <img
+              class="feedback-star-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJXSURBVHgBnVJfSFNRHP6dc3anLnWXu/w350okiVGWCAsKinpZSiAUQkUPLYugh4gKWgTRi/QS9CAECUE+JBFBEAQR6YO9hD2YIZLNpgw2mVvOzf3fvefX2driDuaD/uBwz/2d7/vOd75zALYu8vX52ZPjI1d7CnPYSeHyTUTfNYQdFPFNXLikZX3IN7/wD6PDx7btAoOeCGIWETM8E7zv20qAVmsOuxwKykcsAFnxlyfGenvnkMMhVcOSqTG3y9aU799llmSgXNGQNFj3NR9g7fcU4YMWNkbM8dzyk1BKA386tBEnrCayuRaNznrpS5L7NMA15wOsNTVSIAyA1QmOSWjndAYLOdaKoYlpRgwVUtEVjUzfyRbPhYsX1bjihkZZZkAMQsRYIutPWBDhxe96YF6Tw6+SrPe9mZRQPPrj/IxWc7DX0nnU8C8dqdKB2BWJEdbmJjQpuTBpOT7pKkSgT5ZEpk6PyC3Uw+yDBAxNosVKfGFd9YMansbAr9Tdvf0fn5YsVV6Ne1DpeOFp8WPHfrFSiEQq2kaeK8JpMgjXb3jlsc/RWJnD9ALvHrbdbjCqJwSSUC0BaioCPLMOLL8BmPoDGEtiV5dl8dnb0FyZY9ALtLZKlyEWJaimIRznGiESUykDynK8yUwoz3Jis9bdEtDxMqfiIdVkEntiIRX9SyqSemW2eShAref81Gi1z6/8Bi25qkKjIX1Iz/kvMHplt3XJm0FTd0v2W8zc0zzw01m+AsU5c/h7Qj7FbG2wuhAnZ/raTFClyJvH9r5qzvS914/au/XZ/QUAOu3AsOyKNgAAAABJRU5ErkJggg=="
+              alt="Star"
+              width="16"
+              height="16"
+            />
+            <p class="feedback-item-rating-text">4.3 / 5</p>
+          </div>
+          <p class="feedback-item-rating-text feedback-item-rating-bottom-text">
+            Based on 18,300+ reviews
+          </p>
+        </li>
+        <li class="feedback-list-item">
+          <p class="feedback-item-text">
+            “Looks simple. Actually makes you think.”
+          </p>
+          <p class="feedback-item-name">— Kevin</p>
+        </li>
+        <li class="feedback-list-item">
+          <p class="feedback-item-text">
+            “One wrong move and it’s over. That’s what I like.”
+          </p>
+          <p class="feedback-item-name">— Mira</p>
+        </li>
+        <li class="feedback-list-item">
+          <p class="feedback-item-text">
+            “Great for when you've got 10 minutes to kill.”
+          </p>
+          <p class="feedback-item-name">— Thomas</p>
+        </li>
+        <li class="feedback-list-item">
+          <p class="feedback-item-text">
+            “Love how simple it looks - no unnecessary junk on screen.”
+          </p>
+          <p class="feedback-item-name">— Elena</p>
+        </li>
+        <li class="feedback-list-item">
+          <p class="feedback-item-text">
+            “The puzzles get trickier but they don't feel cheap or unfair.”
+          </p>
+          <p class="feedback-item-name">— Jonas</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section audience-section" id="audience">
+  <div class="section-title-wrapper audience-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title audience-title">WHO THIS GAME IS FOR</h2>
+    </div>
+  </div>
+  <div class="audience-bg-wrapper">
+    <div class="container audience-container">
+      <div class="audience-content-wrapper">
+        <picture>
+          <source
+            srcset="/neonjackpot/assets/audience-img1-desk-e76bb71a.png "
+            media="(min-width: 1440px)"
+            width="342"
+            height="342" />
+          <source
+            srcset="/neonjackpot/assets/audience-img1-mob-6b4a71da.png "
+            width="243"
+            height="243" />
+          <img
+            class="audience-img"
+            src="/neonjackpot/assets/audience-img1-mob-6b4a71da.png"
+            alt="Screenshot of the game"
+            width="243"
+            height="243"
+            loading="lazy"
+        /></picture>
+        <div class="audience-text-wrapper">
+          <p class="audience-top-text">Drop Away is ideal for players who:</p>
+          <p class="audience-middle-text">
+            Enjoy spatial logic puzzles<br />
+            Like color-matching with real consequences<br />
+            Prefer thinking over reflexes<br />
+            Want a clean, ad-light puzzle experience<br />
+            Enjoy solving problems step by step
+          </p>
+          <p class="audience-bottom-text">
+            This is not chaos.<br />
+            This is controlled challenge.
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="/neonjackpot/assets/audience-img2-desk-1b3b6ca3.png "
+            media="(min-width: 1440px)"
+            width="342"
+            height="342" />
+          <source
+            srcset="/neonjackpot/assets/audience-img2-mob-e7143c2e.png "
+            width="243"
+            height="243" />
+          <img
+            class="audience-img"
+            src="/neonjackpot/assets/audience-img2-mob-e7143c2e.png"
+            alt="Screenshot of the game"
+            width="243"
+            height="243"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section play-section" id="play">
+  <div class="section-title-wrapper play-title-wrapper">
+    <div class="container section-title-container">
+      <h2 class="section-title play-title">PLAY NOW</h2>
+    </div>
+  </div>
+  <div class="play-bg-wrapper">
+    <div class="container play-container">
+      <p class="section-subtitle play-subtitle">
+        Drop carefully. Solve smartly.
+      </p>
+      <div class="play-btn-wrapper">
+        <a class="play-microsoft-btn" href="#home">
+          <img
+            class="play-img"
+            src="/neonjackpot/assets/play-microsoft-7e667deb.png"
+            alt="Microsoft Store button"
+            aria-label="Download the game on Microsoft Store"
+            width="240"
+            height="72"
+          />
+        </a>
+        <a
+          class="play-playstore-btn"
+          href="https://play.google.com/store/apps/details?id=com.brewgames.dropaway&hl=en&gl=us"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="play-img"
+            src="/neonjackpot/assets/play-playstore-c50754c0.png"
+            alt="Google Play button"
+            aria-label="Download the game on Google Play"
+            width="240"
+            height="72"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <div class="footer-nav-wrapper">
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a class="footer-link" href="./privacy-policy.html"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./terms-and-conditions.html"
+              >Terms & Conditions</a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./cookies-policy.html"
+              >Cookies Policy</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p class="footer-text">© 2025 neonjackpot.space — All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#home">Welcome</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#about"
+          >Core Game Idea</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#mechanic"
+          >The Drop Mechanic</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#advantages"
+          >Why It’s Addictive</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#variety"
+          >Level Variety & Longevity</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#platform"
+          >Platform & Accessibility</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gallery"
+          >Game Gallery</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#feedback"
+          >Player Feedback</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#audience"
+          >Who Is This Game For</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#play">Play Now</a>
+      </li>
+    </ul>
+    <ul class="context-privacy-list">
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./privacy-policy.html"
+          >Privacy Policy</a
+        >
+      </li>
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./terms-and-conditions.html"
+          >Terms & Conditions</a
+        >
+      </li>
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./cookies-policy.html"
+          >Cookies Policy</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-content-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to improve your experience on our website. By browsing this
+      website, you agree to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-decline-btn" id="cookie-decline">
+        DECLINE COOKIES
+      </button>
+      <button class="cookie-accept-btn" id="cookie-accept">
+        ACCEPT COOKIES
+      </button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
